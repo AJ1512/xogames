@@ -1,0 +1,123 @@
+body{
+    background: ghostwhite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    background-image: linear-gradient(90deg, #e8ec00 0%, #ff0000 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+    font-size: 5em;
+}
+/*p{
+    font-family: monospace;
+    font-size: large;
+    text-align: center;
+    letter-spacing: 5px;
+} */
+
+#Container{
+    margin: 5px;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;   
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+span{
+    position: absolute ;
+    font-size: 75px;
+    font-family: sans-serif ; 
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+    background-image: linear-gradient(180deg, #e5e900 0%, #e016ce 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+    font-size: 5em;
+}
+.alert{
+    height: 75px;
+    width:125px;
+    display: inline-block;
+    background: ghostwhite;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px gray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+.button{
+    background: gray;
+    border-radius: 2px;
+    color: ghostwhite;
+    border: none;
+    outline: none; 
+}
+
+button:focus{
+    background-image: linear-gradient(180deg, #e8ec00 0%, #ff0000 100%);}
+
+.activeBox{
+    background: silver;
+}
+.gameOverAlertElement{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+/* footer */
+
+.new1{ 
+    font-family: monospace;
+    background-color: silver;
+    padding: 15px 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+p{
+    font-size: large;
+}
+b{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+}
+
+
+@keyframes larger{
+    from{
+        height: 75px;
+        width: 125px;
+    }
+    to{
+        height: 100px;
+        width: 250px;
+    }
+}
+
